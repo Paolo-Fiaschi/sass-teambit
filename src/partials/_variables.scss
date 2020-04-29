@@ -1,0 +1,13 @@
+$font-sizeH2: 26px;
+$background-colorPink: #FFE7D2;
+$background-colorBlue: #30488F;
+$background-colorBlueHover:#233569;
+$text-color: #58402C;
+$font-size: 22px;
+$background-colorPink: #FFE7D2;
+
+@mixin my-display-flex {
+display: flex;
+justify-content: space-around;
+align-items: center;
+}

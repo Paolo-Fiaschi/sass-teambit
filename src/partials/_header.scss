@@ -1,0 +1,56 @@
+// HEADER---------------------------------------
+header{
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  border-bottom: 1px solid #BDB5AF;
+  .headerSx{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img{
+      margin-right: 10px;
+      color: #BDB5AF;
+    }
+    a{
+      font-size: 21px;
+      letter-spacing: 1px;
+    }
+  }
+  .headerDx{
+    width: 40%;
+    @include my-display-flex;
+    font-size: 14px;
+    ul{
+      display: flex;
+      width: 80%;
+      justify-content: space-around;
+      list-style-type: none;
+      font-weight: bolder;
+      letter-spacing: .5px;
+    }
+    .headerButton{
+      padding: 7px 12px;
+      border: none;
+      border-radius: 8px;
+      background-color: white;
+      border: 1px solid $background-colorBlue;
+      color: $background-colorBlue;
+      font-weight: bolder;
+      @include my-display-flex;
+      img{
+        width: 20px;
+        margin-right: 4px;
+      }
+      &:hover{
+        background-color: $background-colorBlue;
+        color: #fff;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+    }
+  }
+}

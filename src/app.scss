@@ -1,75 +1,253 @@
-*{
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-body{
-  width: 100vw;
-  color: #58402C;
-}
-a,
-a:visited{
-  color: #58402C;
-  text-decoration: none;
-}
-span{
-  display: inline-block;
-}
-header{
-  display: flex;
-  justify-content: space-between;
-  height: 70px;
-  align-items: center;
-  width: 45%;
-  margin: auto;
-  border-bottom: 1px solid #BDB5AF;
-  .headerSx{
+@import "partials/variables";
+@import "partials/common";
+@import "partials/header";
+// MAIN------------------------------------
+main{
+  width: 100%;
+
+  // jumbotron-------------------------------
+  #jumbotron{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    img{
-      margin-right: 10px;
-      color: #BDB5AF;
+    width: 80%;
+    margin: 0 auto;
+    .jumbotronSx{
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      margin: 100px 0;
+      h1{
+        font-size: 50px;
+        letter-spacing: 3px;
+        line-height: 75px;
+      }
+      p{
+        font-size: $font-size;
+        margin-top: 15px;
+      }
+      .jumbotronButtons{
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        .jumbotronButton1{
+          padding: 8px 12px;
+          border: none;
+          border-radius: 8px;
+          background-color: $background-colorBlue;
+          border: 1px solid $background-colorBlue;
+          color: white;
+          font-weight: bolder;
+          @include my-display-flex;
+          margin-right: 20px;
+          img{
+            width: 20px;
+            margin-right: 4px;
+          }
+          &:hover{
+            background-color: $background-colorBlueHover;
+            color: #fff;
+            cursor: pointer;
+            transition: 0.5s;
+          }
+        }
+        .jumbotronButton2{
+          padding: 7px 12px;
+          border: none;
+          border-radius: 8px;
+          background-color: $background-colorBlue;
+          border: 1px solid $background-colorBlue;
+          color: white;
+          font-weight: bolder;
+          @include my-display-flex;
+          margin-left: 20px;
+          img{
+            width: 25px;
+            margin-right: 4px;
+          }
+          &:hover{
+            background-color: $background-colorBlueHover;
+            color: #fff;
+            cursor: pointer;
+            transition: 0.5s;
+          }
+        }
+      }
+      .emailSend{
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        letter-spacing: 1px;
+        :first-child{
+          margin-right: 3px;
+        }
+      }
     }
-    a{
-      font-size: 21px;
-      letter-spacing: 1px;
+    .jumbotronDx{
+      width: 50%;
+      margin: 100px 0;
+      img{
+        width: 100%;
+      }
     }
   }
-  .headerDx{
-    width: 40%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 14px;
-    ul{
-      display: flex;
+
+  // people processes----------------------
+  .containerLarge{
+    width: 100%;
+    background-color: $background-colorPink;
+    .processesContainer{
       width: 80%;
-      justify-content: space-around;
-      list-style-type: none;
-      font-weight: bolder;
-      letter-spacing: .5px;
-    }
-    .headerButton{
-      padding: 7px 12px;
-      border: none;
-      border-radius: 8px;
-      background-color: white;
-      border: 1px solid #30488F;
-      color: #30488F;
-      font-weight: bolder;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      img{
-        width: 20px;
-        margin-right: 4px;
+      margin: 0 auto;
+      border-bottom: 1px solid #BDB5AF;
+      h2{
+        text-align: center;
+        padding-top: 80px;
+        font-size: $font-size;
+        width: 60%;
+        margin: 0 auto 30px;
+        line-height: 40px;
       }
-      &:hover{
-        background-color: #30488F;
-        color: #fff;
-        cursor: pointer;
-        transition: 0.5s;
+      .processesImgs{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        min-height: 190px;
+        padding-top: 30px;
+        .box{
+          min-height: 200px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          width: 20%;
+          img{
+            width: 150px;
+          }
+          p{
+            letter-spacing: 1px;
+            font-size: 17px;
+            line-height: 30px;
+          }
+        }
+        .boxMiddle{
+          width: 25%;
+        }
+        .lastBox img{
+          width: 75px;
+        }
+      }
+      .processesImg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+          width: 300px;
+          margin: 60px auto;
+        }
+      }
+    }
+    .noBorder{
+      border-bottom: none;
+      padding-bottom: 30px;
+    }
+  }
+  // feedback-reviews
+  .feedback-reviews{
+    margin: 100px 0;
+    display: flex;
+    width: 80%;
+    .feedbackImg{
+      width: 50%;
+      img{
+        width: 100%;
+      }
+    }
+    .feedback-text{
+      width: 50%;
+      h2{
+        font-size: $font-sizeH2;
+        letter-spacing: 1px;
+      }
+      p{
+        font-size: $font-size;
+        margin-top: 15px;
+        letter-spacing: 1px;
+      }
+      .learnMore{
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        font-size: $font-size;
+        letter-spacing: 1px;
+        color: $background-colorBlue;
+        padding-bottom: 30px;
+        :first-child{
+          margin-right: 3px;
+        }
+      }
+      .trichecoImg{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        img{
+          width: 300px;
+        }
+      }
+    }
+  }
+  .right{
+    margin: 100px 0 100px 20%;
+  }
+
+  //get started------------------------
+  .getStartContainer{
+    width: 80%;
+    margin: 100px auto;
+    h2{
+      text-align: center;
+      padding-top: 80px;
+      font-size: 35px;;
+      width: 40%;
+      margin: 0 auto 30px;
+      line-height: 60px;
+    }
+    .text{
+      background-color: #fff;
+      width: 60%;
+      margin: auto;
+      border: 1px solid #BDB5AF;
+      border-radius: 4px;
+      padding: 35px;
+      position: relative;
+      p{
+        line-height: 25px;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+      }
+      .founder{
+        display: flex;
+        img{
+          width: 40px;
+          margin-right: 10px;
+        }
+        .nameFounder{
+          display: flex;
+          flex-direction: column;
+          :first-child{
+            color: $background-colorBlue;
+          }
+        }
+      }
+      .virgolette{
+        display: block;
+        width: 37px;
+        height: 39px;
+        position: absolute;
+        top: -23px;
+        left: -1px;
+        background: url(https://teambit.io/wp-content/themes/teambeat/img/landing/quote.svg) center center no-repeat;
+        z-index: 1;
       }
     }
   }

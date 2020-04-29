@@ -7,6 +7,7 @@
 body {
   width: 100vw;
   color: #58402C;
+  font-family: Arial, sans-serif;
 }
 
 a,
@@ -24,7 +25,7 @@ header {
   justify-content: space-between;
   height: 70px;
   align-items: center;
-  width: 45%;
+  width: 80%;
   margin: auto;
   border-bottom: 1px solid #BDB5AF;
 }
@@ -71,8 +72,8 @@ header .headerDx .headerButton {
   color: #30488F;
   font-weight: bolder;
   display: flex;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
 }
 
 header .headerDx .headerButton img {
@@ -85,5 +86,300 @@ header .headerDx .headerButton:hover {
   color: #fff;
   cursor: pointer;
   transition: 0.5s;
+}
+
+main {
+  width: 100%;
+}
+
+main #jumbotron {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+main #jumbotron .jumbotronSx {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 100px 0;
+}
+
+main #jumbotron .jumbotronSx h1 {
+  font-size: 50px;
+  letter-spacing: 3px;
+  line-height: 75px;
+}
+
+main #jumbotron .jumbotronSx p {
+  font-size: 22px;
+  margin-top: 15px;
+}
+
+main #jumbotron .jumbotronSx .jumbotronButtons {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton1 {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #30488F;
+  border: 1px solid #30488F;
+  color: white;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 20px;
+}
+
+main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton1 img {
+  width: 20px;
+  margin-right: 4px;
+}
+
+main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton1:hover {
+  background-color: #233569;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton2 {
+  padding: 7px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #30488F;
+  border: 1px solid #30488F;
+  color: white;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 20px;
+}
+
+main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton2 img {
+  width: 25px;
+  margin-right: 4px;
+}
+
+main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton2:hover {
+  background-color: #233569;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+main #jumbotron .jumbotronSx .emailSend {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+main #jumbotron .jumbotronSx .emailSend :first-child {
+  margin-right: 3px;
+}
+
+main #jumbotron .jumbotronDx {
+  width: 50%;
+  margin: 100px 0;
+}
+
+main #jumbotron .jumbotronDx img {
+  width: 100%;
+}
+
+main .containerLarge {
+  width: 100%;
+  background-color: #FFE7D2;
+}
+
+main .containerLarge .processesContainer {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid #BDB5AF;
+}
+
+main .containerLarge .processesContainer h2 {
+  text-align: center;
+  padding-top: 80px;
+  font-size: 22px;
+  width: 60%;
+  margin: 0 auto 30px;
+  line-height: 40px;
+}
+
+main .containerLarge .processesContainer .processesImgs {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  min-height: 190px;
+  padding-top: 30px;
+}
+
+main .containerLarge .processesContainer .processesImgs .box {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+}
+
+main .containerLarge .processesContainer .processesImgs .box img {
+  width: 150px;
+}
+
+main .containerLarge .processesContainer .processesImgs .box p {
+  letter-spacing: 1px;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+main .containerLarge .processesContainer .processesImgs .boxMiddle {
+  width: 25%;
+}
+
+main .containerLarge .processesContainer .processesImgs .lastBox img {
+  width: 75px;
+}
+
+main .containerLarge .processesContainer .processesImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .containerLarge .processesContainer .processesImg img {
+  width: 300px;
+  margin: 60px auto;
+}
+
+main .containerLarge .noBorder {
+  border-bottom: none;
+  padding-bottom: 30px;
+}
+
+main .feedback-reviews {
+  margin: 100px 0;
+  display: flex;
+  width: 80%;
+}
+
+main .feedback-reviews .feedbackImg {
+  width: 50%;
+}
+
+main .feedback-reviews .feedbackImg img {
+  width: 100%;
+}
+
+main .feedback-reviews .feedback-text {
+  width: 50%;
+}
+
+main .feedback-reviews .feedback-text h2 {
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+main .feedback-reviews .feedback-text p {
+  font-size: 22px;
+  margin-top: 15px;
+  letter-spacing: 1px;
+}
+
+main .feedback-reviews .feedback-text .learnMore {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: #30488F;
+  padding-bottom: 30px;
+}
+
+main .feedback-reviews .feedback-text .learnMore :first-child {
+  margin-right: 3px;
+}
+
+main .feedback-reviews .feedback-text .trichecoImg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+main .feedback-reviews .feedback-text .trichecoImg img {
+  width: 300px;
+}
+
+main .right {
+  margin: 100px 0 100px 20%;
+}
+
+main .getStartContainer {
+  width: 80%;
+  margin: 100px auto;
+}
+
+main .getStartContainer h2 {
+  text-align: center;
+  padding-top: 80px;
+  font-size: 35px;
+  width: 40%;
+  margin: 0 auto 30px;
+  line-height: 60px;
+}
+
+main .getStartContainer .text {
+  background-color: #fff;
+  width: 60%;
+  margin: auto;
+  border: 1px solid #BDB5AF;
+  border-radius: 4px;
+  padding: 35px;
+  position: relative;
+}
+
+main .getStartContainer .text p {
+  line-height: 25px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+main .getStartContainer .text .founder {
+  display: flex;
+}
+
+main .getStartContainer .text .founder img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+main .getStartContainer .text .founder .nameFounder {
+  display: flex;
+  flex-direction: column;
+}
+
+main .getStartContainer .text .founder .nameFounder :first-child {
+  color: #30488F;
+}
+
+main .getStartContainer .text .virgolette {
+  display: block;
+  width: 37px;
+  height: 39px;
+  position: absolute;
+  top: -23px;
+  left: -1px;
+  background: url(https://teambit.io/wp-content/themes/teambeat/img/landing/quote.svg) center center no-repeat;
+  z-index: 1;
 }
 
