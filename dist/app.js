@@ -107,10 +107,21 @@ $(document).ready(function () {
 
   $(window).scroll(function () {
     if ($(document).scrollTop() > 70) {
-      $("header").addClass("scrollHeader");
-      $(".headerButton").addClass('scrollButton');
+      if ($("header").hasClass('scrollHeader') == false) {
+        $("header").css("display", "none");
+        $("header").addClass("scrollHeader");
+        $("header").fadeIn(800);
+        $(".headerButton").addClass('scrollButton');
+        $(".googleLogo").css('display', 'block');
+        $(".headerButton img").css('display', 'none');
+      }
     } else {
-      $("header").removeClass("scrollHeader");
+      if ($("header").hasClass('scrollHeader')) {
+        $("header").removeClass("scrollHeader");
+        $(".headerButton").removeClass('scrollButton');
+        $(".googleLogo").css('display', 'none');
+        $(".headerButton img").css('display', 'block');
+      }
     }
   });
 });

@@ -72,9 +72,12 @@ header{
         display: none;
       }
       &.scrollButton {
-          background-color: #30488F;
-          color: #fff;
-          cursor: pointer;
+        background-color: #30488F;
+        color: #fff;
+        cursor: pointer;
+        &:hover{
+          background-color: $background-colorBlueHover;
+        }
       }
     }
   }
