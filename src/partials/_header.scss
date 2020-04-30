@@ -71,6 +71,11 @@ header{
       &:hover img{
         display: none;
       }
+      &.scrollButton {
+          background-color: #30488F;
+          color: #fff;
+          cursor: pointer;
+      }
     }
   }
   .hamburgerMenu{
@@ -112,11 +117,7 @@ header{
   left: 0;
   background: white;
 }
-// .scrollButton{
-//   background-color: #30488F;
-//   color: #fff;
-//   cursor: pointer;
-// }
+
 // MEDIA QUERY---------------
 // * versione xxs mobile -------------------------------*/
 

@@ -112,6 +112,12 @@ header .headerDx .headerButton:hover img {
   display: none;
 }
 
+header .headerDx .headerButton.scrollButton {
+  background-color: #30488F;
+  color: #fff;
+  cursor: pointer;
+}
+
 header .hamburgerMenu {
   display: none;
 }
