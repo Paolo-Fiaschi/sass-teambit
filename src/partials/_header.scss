@@ -33,6 +33,10 @@ header{
       letter-spacing: .5px;
       li{
         margin-right: 10px;
+        a:hover{
+          color: $background-colorBlue;
+
+        }
       }
     }
     .headerButton{
@@ -49,19 +53,70 @@ header{
         width: 20px;
         margin-right: 4px;
       }
+      .googleLogo{
+        color: white;
+        font-size: 20px;
+        display: none;
+        margin-right: 4px;
+      }
       &:hover{
         background-color: $background-colorBlue;
         color: #fff;
         cursor: pointer;
         transition: 0.5s;
       }
+      &:hover .googleLogo{
+        display: block;
+      }
+      &:hover img{
+        display: none;
+      }
     }
   }
   .hamburgerMenu{
     display: none;
   }
+  ul .menuTendina{
+    position: relative;
+    .menu{
+      position: absolute;
+      left: 0;
+      width: 100%;
+      border: 1px solid #BDB5AF;
+      padding: 6px;
+      border-radius: 6px;
+      box-shadow: 0px 0px 2px;
+      display: none;
+      background: white;
+      ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        li{
+          line-height: 35px;
+          cursor: pointer;
+          &:hover{
+            color: $background-colorBlue;
+          }
+        }
+      }
+    }
+  }
 }
-
+.scrollHeader{
+  justify-content: space-around;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+}
+// .scrollButton{
+//   background-color: #30488F;
+//   color: #fff;
+//   cursor: pointer;
+// }
 // MEDIA QUERY---------------
 // * versione xxs mobile -------------------------------*/
 
