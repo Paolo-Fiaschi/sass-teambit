@@ -31,6 +31,9 @@ header{
       list-style-type: none;
       font-weight: bolder;
       letter-spacing: .5px;
+      li{
+        margin-right: 10px;
+      }
     }
     .headerButton{
       padding: 7px 12px;
@@ -41,6 +44,7 @@ header{
       color: $background-colorBlue;
       font-weight: bolder;
       @include my-display-flex;
+      width: 100px;
       img{
         width: 20px;
         margin-right: 4px;
@@ -53,4 +57,69 @@ header{
       }
     }
   }
+  .hamburgerMenu{
+    display: none;
+  }
+}
+
+// MEDIA QUERY---------------
+// * versione xxs mobile -------------------------------*/
+
+@media screen and (max-width:660px) {
+  header{
+    width: 100%;
+  }
+  header .headerDx{
+    display: none;
+  }
+  header .headerSx{
+    margin-left: 20px;
+  }
+  header .hamburgerMenu{
+    display: block;
+    margin-right: 40px;
+    font-size: 25px;
+  }
+}
+/* versione extra mobile xs --------------------------*/
+
+@media screen and (min-width:661px) and (max-width:768px) {
+  header{
+    width: 100%;
+  }
+  header .headerDx{
+    display: none;
+  }
+  header .headerSx{
+    margin-left: 20px;
+  }
+  header .hamburgerMenu{
+    display: block;
+    margin-right: 40px;
+    font-size: 25px;
+  }
+}
+@media screen and (min-width:769px) and (max-width:992px){
+  header{
+    width: 100%;
+  }
+  header .headerDx{
+    width: 50%;
+    margin-right: 20px;
+  }
+  header .headerSx{
+    margin-left: 20px;
+  }
+}
+/* versione tablet md ----------------------------*/
+
+@media screen and (min-width:993px) and (max-width:1199px){
+  header .headerDx{
+    width: 50%;
+  }
+}
+/* versione dekstop lg */
+
+@media screen and (min-width:1200px){
+
 }

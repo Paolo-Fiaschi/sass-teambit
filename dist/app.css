@@ -63,6 +63,10 @@ header .headerDx ul {
   letter-spacing: 0.5px;
 }
 
+header .headerDx ul li {
+  margin-right: 10px;
+}
+
 header .headerDx .headerButton {
   padding: 7px 12px;
   border: none;
@@ -74,6 +78,7 @@ header .headerDx .headerButton {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100px;
 }
 
 header .headerDx .headerButton img {
@@ -87,6 +92,220 @@ header .headerDx .headerButton:hover {
   cursor: pointer;
   transition: 0.5s;
 }
+
+header .hamburgerMenu {
+  display: none;
+}
+
+@media screen and (max-width: 660px) {
+  header {
+    width: 100%;
+  }
+
+  header .headerDx {
+    display: none;
+  }
+
+  header .headerSx {
+    margin-left: 20px;
+  }
+
+  header .hamburgerMenu {
+    display: block;
+    margin-right: 40px;
+    font-size: 25px;
+  }
+}
+
+/* versione extra mobile xs --------------------------*/
+
+@media screen and (min-width: 661px) and (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+
+  header .headerDx {
+    display: none;
+  }
+
+  header .headerSx {
+    margin-left: 20px;
+  }
+
+  header .hamburgerMenu {
+    display: block;
+    margin-right: 40px;
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  header {
+    width: 100%;
+  }
+
+  header .headerDx {
+    width: 50%;
+    margin-right: 20px;
+  }
+
+  header .headerSx {
+    margin-left: 20px;
+  }
+}
+
+/* versione tablet md ----------------------------*/
+
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+  header .headerDx {
+    width: 50%;
+  }
+}
+
+/* versione dekstop lg */
+
+footer {
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footerSx {
+  width: 35%;
+  display: flex;
+}
+
+footer .footerSx .footerImg {
+  width: 50px;
+}
+
+footer .footerSx .footerImg img {
+  width: 100%;
+}
+
+footer .footerSx p {
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+footer .footerSx p :first-child {
+  color: #30488F;
+}
+
+footer .footerSx p :first-child:hover {
+  text-decoration: underline;
+}
+
+footer .footerDx {
+  display: flex;
+  justify-content: space-between;
+  width: 64%;
+}
+
+footer .footerDx div {
+  width: 18%;
+}
+
+footer .footerDx div h3 {
+  padding-bottom: 10px;
+}
+
+footer .footerDx div ul {
+  list-style-type: none;
+}
+
+footer .footerDx div ul li {
+  font-size: 13px;
+  line-height: 35px;
+}
+
+@media screen and (max-width: 660px) {
+  footer {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  footer .footerSx {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+
+  footer .footerDx {
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  footer .footerDx div {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+/* versione extra mobile xs --------------------------*/
+
+@media screen and (min-width: 661px) and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  footer .footerSx {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+
+  footer .footerDx {
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  footer .footerDx div {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  footer {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  footer .footerSx {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+
+  footer .footerDx {
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  footer .footerDx div {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+/* versione tablet md ----------------------------*/
+
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+  footer .footerSx .footerImg {
+    width: 100px;
+  }
+}
+
+/* versione dekstop lg */
 
 main {
   width: 100%;
@@ -148,8 +367,12 @@ main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton1:hover {
   transition: 0.5s;
 }
 
+main #jumbotron .jumbotronSx .jumbotronButtons .lightColor {
+  color: #BDB5AF;
+}
+
 main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton2 {
-  padding: 7px 12px;
+  padding: 8px 12px;
   border: none;
   border-radius: 8px;
   background-color: #30488F;
@@ -159,11 +382,13 @@ main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton2 {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-right: 20px;
+  padding: 6px 12px;
   margin-left: 20px;
 }
 
 main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton2 img {
-  width: 25px;
+  width: 20px;
   margin-right: 4px;
 }
 
@@ -172,6 +397,10 @@ main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton2:hover {
   color: #fff;
   cursor: pointer;
   transition: 0.5s;
+}
+
+main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton2 img {
+  width: 25px;
 }
 
 main #jumbotron .jumbotronSx .emailSend {
@@ -184,6 +413,12 @@ main #jumbotron .jumbotronSx .emailSend {
 
 main #jumbotron .jumbotronSx .emailSend :first-child {
   margin-right: 3px;
+}
+
+main #jumbotron .jumbotronSx .emailSend:hover {
+  color: #30488F;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 main #jumbotron .jumbotronDx {
@@ -241,10 +476,11 @@ main .containerLarge .processesContainer .processesImgs .box p {
   letter-spacing: 1px;
   font-size: 17px;
   line-height: 30px;
+  text-align: center;
 }
 
 main .containerLarge .processesContainer .processesImgs .boxMiddle {
-  width: 25%;
+  width: 28%;
 }
 
 main .containerLarge .processesContainer .processesImgs .lastBox img {
@@ -304,6 +540,7 @@ main .feedback-reviews .feedback-text .learnMore {
   letter-spacing: 1px;
   color: #30488F;
   padding-bottom: 30px;
+  cursor: pointer;
 }
 
 main .feedback-reviews .feedback-text .learnMore :first-child {
@@ -333,19 +570,20 @@ main .getStartContainer h2 {
   text-align: center;
   padding-top: 80px;
   font-size: 35px;
-  width: 40%;
+  width: 50%;
   margin: 0 auto 30px;
   line-height: 60px;
 }
 
 main .getStartContainer .text {
   background-color: #fff;
-  width: 60%;
+  width: 50%;
   margin: auto;
   border: 1px solid #BDB5AF;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 35px;
   position: relative;
+  margin-bottom: 30px;
 }
 
 main .getStartContainer .text p {
@@ -370,6 +608,12 @@ main .getStartContainer .text .founder .nameFounder {
 
 main .getStartContainer .text .founder .nameFounder :first-child {
   color: #30488F;
+  font-size: 15px;
+}
+
+main .getStartContainer .text .founder .nameFounder :last-child {
+  font-size: 12px;
+  padding-top: 5px;
 }
 
 main .getStartContainer .text .virgolette {
@@ -382,4 +626,678 @@ main .getStartContainer .text .virgolette {
   background: url(https://teambit.io/wp-content/themes/teambeat/img/landing/quote.svg) center center no-repeat;
   z-index: 1;
 }
+
+main .getStartContainer .getStartButtons {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+main .getStartContainer .getStartButtons .getStartButton1 {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #30488F;
+  border: 1px solid #30488F;
+  color: white;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 20px;
+}
+
+main .getStartContainer .getStartButtons .getStartButton1 img {
+  width: 20px;
+  margin-right: 4px;
+}
+
+main .getStartContainer .getStartButtons .getStartButton1:hover {
+  background-color: #233569;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+main .getStartContainer .getStartButtons .lightColor {
+  color: #BDB5AF;
+}
+
+main .getStartContainer .getStartButtons .getStartButton2 {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #30488F;
+  border: 1px solid #30488F;
+  color: white;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 20px;
+  padding: 6px 12px;
+  margin-left: 20px;
+}
+
+main .getStartContainer .getStartButtons .getStartButton2 img {
+  width: 20px;
+  margin-right: 4px;
+}
+
+main .getStartContainer .getStartButtons .getStartButton2:hover {
+  background-color: #233569;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+main .getStartContainer .getStartButtons .getStartButton2 img {
+  width: 25px;
+}
+
+main .getStartContainer .getStartEmailSend {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  letter-spacing: 1px;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+main .getStartContainer .getStartEmailSend :first-child {
+  margin-right: 3px;
+}
+
+main .getStartContainer .getStartEmailSend:hover {
+  color: #30488F;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 660px) {
+  main #jumbotron {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main #jumbotron .jumbotronSx {
+    width: 100%;
+    align-items: center;
+    margin: 100px 0 0 0;
+  }
+
+  main #jumbotron .jumbotronSx h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin: 30px 0;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton1 {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #30488F;
+    border: 1px solid #30488F;
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton1 img {
+    width: 20px;
+    margin-right: 4px;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton1:hover {
+    background-color: #233569;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .lightColor {
+    color: #BDB5AF;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton2 {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #30488F;
+    border: 1px solid #30488F;
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+    padding: 6px 12px;
+    margin-left: 20px;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton2 img {
+    width: 20px;
+    margin-right: 4px;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton2:hover {
+    background-color: #233569;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton2 img {
+    width: 25px;
+  }
+
+  main #jumbotron .jumbotronSx .emailSend {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+
+  main #jumbotron .jumbotronSx .emailSend :first-child {
+    margin-right: 3px;
+  }
+
+  main #jumbotron .jumbotronSx .emailSend:hover {
+    color: #30488F;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  main #jumbotron .jumbotronDx {
+    width: 100%;
+    margin: 0 0 100px 0;
+  }
+
+  main .feedback-reviews {
+    width: 100%;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+
+  main .feedback-reviews .feedbackImg,
+  main .feedback-reviews .feedback-text {
+    width: 100%;
+  }
+
+  main .feedback-reviews .feedback-text h2,
+  main .feedback-reviews .feedback-text p {
+    text-align: center;
+  }
+
+  main .feedback-reviews .feedback-text .learnMore {
+    justify-content: center;
+  }
+
+  main .right {
+    margin: 100px 0;
+  }
+
+  main .containerLarge .processesContainer {
+    width: 100%;
+  }
+
+  main .containerLarge .processesContainer .processesImgs {
+    flex-wrap: wrap;
+  }
+
+  main .containerLarge .processesContainer .processesImgs .box {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  main .getStartContainer h2 {
+    width: 70%;
+  }
+
+  main .getStartContainer .text {
+    width: 90%;
+  }
+}
+
+/* versione extra mobile xs --------------------------*/
+
+@media screen and (min-width: 661px) and (max-width: 768px) {
+  main #jumbotron {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main #jumbotron .jumbotronSx {
+    width: 100%;
+    align-items: center;
+    margin: 100px 0 0 0;
+  }
+
+  main #jumbotron .jumbotronSx h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin: 30px 0;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton1 {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #30488F;
+    border: 1px solid #30488F;
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton1 img {
+    width: 20px;
+    margin-right: 4px;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton1:hover {
+    background-color: #233569;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .lightColor {
+    color: #BDB5AF;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton2 {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #30488F;
+    border: 1px solid #30488F;
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+    padding: 6px 12px;
+    margin-left: 20px;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton2 img {
+    width: 20px;
+    margin-right: 4px;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton2:hover {
+    background-color: #233569;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton2 img {
+    width: 25px;
+  }
+
+  main #jumbotron .jumbotronSx .emailSend {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+
+  main #jumbotron .jumbotronSx .emailSend :first-child {
+    margin-right: 3px;
+  }
+
+  main #jumbotron .jumbotronSx .emailSend:hover {
+    color: #30488F;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  main #jumbotron .jumbotronDx {
+    width: 100%;
+    margin: 0 0 100px 0;
+  }
+
+  main .feedback-reviews {
+    width: 100%;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+
+  main .feedback-reviews .feedbackImg,
+  main .feedback-reviews .feedback-text {
+    width: 100%;
+  }
+
+  main .feedback-reviews .feedback-text h2,
+  main .feedback-reviews .feedback-text p {
+    text-align: center;
+  }
+
+  main .feedback-reviews .feedback-text .learnMore {
+    justify-content: center;
+  }
+
+  main .right {
+    margin: 100px 0;
+  }
+
+  main .containerLarge .processesContainer {
+    width: 100%;
+  }
+
+  main .containerLarge .processesContainer .processesImgs {
+    flex-wrap: wrap;
+  }
+
+  main .containerLarge .processesContainer .processesImgs .box {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  main .getStartContainer h2 {
+    width: 70%;
+  }
+
+  main .getStartContainer .text {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  main #jumbotron {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main #jumbotron .jumbotronSx {
+    width: 100%;
+    align-items: center;
+    margin: 100px 0 0 0;
+  }
+
+  main #jumbotron .jumbotronSx h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin: 30px 0;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton1 {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #30488F;
+    border: 1px solid #30488F;
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton1 img {
+    width: 20px;
+    margin-right: 4px;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton1:hover {
+    background-color: #233569;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .lightColor {
+    color: #BDB5AF;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton2 {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #30488F;
+    border: 1px solid #30488F;
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+    padding: 6px 12px;
+    margin-left: 20px;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton2 img {
+    width: 20px;
+    margin-right: 4px;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton2:hover {
+    background-color: #233569;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton2 img {
+    width: 25px;
+  }
+
+  main #jumbotron .jumbotronSx .emailSend {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+
+  main #jumbotron .jumbotronSx .emailSend :first-child {
+    margin-right: 3px;
+  }
+
+  main #jumbotron .jumbotronSx .emailSend:hover {
+    color: #30488F;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  main #jumbotron .jumbotronDx {
+    width: 100%;
+    margin: 0 0 100px 0;
+  }
+
+  main .feedback-reviews {
+    width: 100%;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+
+  main .feedback-reviews .feedbackImg,
+  main .feedback-reviews .feedback-text {
+    width: 100%;
+  }
+
+  main .feedback-reviews .feedback-text h2,
+  main .feedback-reviews .feedback-text p {
+    text-align: center;
+  }
+
+  main .feedback-reviews .feedback-text .learnMore {
+    justify-content: center;
+  }
+
+  main .right {
+    margin: 100px 0;
+  }
+
+  main .containerLarge .processesContainer {
+    width: 100%;
+  }
+
+  main .getStartContainer h2 {
+    width: 70%;
+  }
+
+  main .getStartContainer .text {
+    width: 90%;
+  }
+}
+
+/* versione tablet md ----------------------------*/
+
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+  main #jumbotron {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main #jumbotron .jumbotronSx {
+    width: 100%;
+    align-items: center;
+    margin: 100px 0 0 0;
+  }
+
+  main #jumbotron .jumbotronSx h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin: 30px 0;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton1 {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #30488F;
+    border: 1px solid #30488F;
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton1 img {
+    width: 20px;
+    margin-right: 4px;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton1:hover {
+    background-color: #233569;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .lightColor {
+    color: #BDB5AF;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton2 {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #30488F;
+    border: 1px solid #30488F;
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+    padding: 6px 12px;
+    margin-left: 20px;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton2 img {
+    width: 20px;
+    margin-right: 4px;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton2:hover {
+    background-color: #233569;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  main #jumbotron .jumbotronSx .jumbotronButtons .jumbotronButton2 img {
+    width: 25px;
+  }
+
+  main #jumbotron .jumbotronSx .emailSend {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+
+  main #jumbotron .jumbotronSx .emailSend :first-child {
+    margin-right: 3px;
+  }
+
+  main #jumbotron .jumbotronSx .emailSend:hover {
+    color: #30488F;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  main #jumbotron .jumbotronDx {
+    width: 50%;
+    margin: 0 0 100px 0;
+  }
+
+  main .feedback-reviews {
+    width: 100%;
+    padding: 10px;
+  }
+
+  main .right {
+    margin: 100px 0;
+  }
+
+  main .getStartContainer h2 {
+    width: 70%;
+  }
+}
+
+/* versione dekstop lg */
 

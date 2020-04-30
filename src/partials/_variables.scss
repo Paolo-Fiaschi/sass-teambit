@@ -11,3 +11,48 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 }
+
+@mixin buttons{
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+@mixin buttonGoogle{
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: $background-colorBlue;
+  border: 1px solid $background-colorBlue;
+  color: white;
+  font-weight: bolder;
+  @include my-display-flex;
+  margin-right: 20px;
+  img{
+    width: 20px;
+    margin-right: 4px;
+  }
+  &:hover{
+    background-color: $background-colorBlueHover;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+}
+@mixin buttonSlack{
+  @include buttonGoogle;
+  padding: 6px 12px;
+  margin-left: 20px;
+  img{
+    width: 25px;
+  }
+}
+@mixin emailSend{
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  letter-spacing: 1px;
+  :first-child{
+    margin-right: 3px;
+  }
+}

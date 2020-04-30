@@ -1,0 +1,126 @@
+// FOOTER----------------------
+footer{
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+  .footerSx{
+    width: 35%;
+    display: flex;
+    .footerImg{
+      width: 50px;
+      img{
+        width: 100%;
+      }
+    }
+    p{
+      font-size: 16px;
+      line-height: 25px;
+      letter-spacing: 1px;
+      font-weight: bold;
+      margin-left: 20px;
+      :first-child{
+        color: $background-colorBlue;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .footerDx{
+    display: flex;
+    justify-content: space-between;
+    width: 64%;
+    div{
+      width: 18%;
+      h3{
+        padding-bottom: 10px;
+      }
+      ul{
+        list-style-type: none;
+        li{
+          font-size: 13px;
+          line-height: 35px;
+        }
+      }
+    }
+  }
+}
+// MEDIA QUERY---------------
+// * versione xxs mobile -------------------------------*/
+
+@media screen and (max-width:660px) {
+  footer{
+    flex-direction: column;
+    width: 100%;
+    .footerSx{
+      width: 100%;
+      margin-bottom: 30px;
+      padding: 20px;
+    }
+    .footerDx{
+      width: 100%;
+      flex-wrap: wrap;
+      padding: 20px;
+      div{
+        width: 50%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+/* versione extra mobile xs --------------------------*/
+
+@media screen and (min-width:661px) and (max-width:768px) {
+  footer{
+    flex-direction: column;
+    width: 100%;
+    .footerSx{
+      width: 100%;
+      margin-bottom: 30px;
+      padding: 20px;
+    }
+    .footerDx{
+      width: 100%;
+      flex-wrap: wrap;
+      padding: 20px;
+      div{
+        width: 50%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+}
+@media screen and (min-width:769px) and (max-width:992px){
+  footer{
+    flex-direction: column;
+    width: 100%;
+    .footerSx{
+      width: 100%;
+      margin-bottom: 30px;
+      padding: 20px;
+    }
+    .footerDx{
+      width: 100%;
+      flex-wrap: wrap;
+      padding: 20px;
+      div{
+        width: 50%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+/* versione tablet md ----------------------------*/
+
+@media screen and (min-width:993px) and (max-width:1199px){
+  footer .footerSx .footerImg{
+    width: 100px;
+  }
+}
+/* versione dekstop lg */
+
+@media screen and (min-width:1200px){
+
+}
